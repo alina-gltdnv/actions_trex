@@ -32,7 +32,7 @@ jobs:
         uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.GENERATOR_NAME }}
-          key: ${{ secrets.PUBLIC_KEY }}
+          key: ${{ secrets.PRIVATE_KEY }}
           script: bash -c "cd /opt/trex/main/ && sudo ./t-rex-64 --cfg /etc/trex_cfg_gc7.yaml -i -v 7"
 
 
