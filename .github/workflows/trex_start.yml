@@ -38,7 +38,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: | 
             cd /opt/trex/main/ 
-            sudo ./t-rex-64 --cfg /etc/trex_cfg_gc7.yaml -i -v 7"
+            #sudo ./t-rex-64 --cfg /etc/trex_cfg_gc7.yaml -i -v 7"
 
 
 
