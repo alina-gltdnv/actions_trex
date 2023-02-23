@@ -33,6 +33,7 @@ jobs:
         with:
           host: ${{ secrets.GENERATOR_NAME }}
           key: ${{ secrets.PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           script: bash -c "cd /opt/trex/main/ && sudo ./t-rex-64 --cfg /etc/trex_cfg_gc7.yaml -i -v 7"
 
 
